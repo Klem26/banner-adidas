@@ -1,0 +1,305 @@
+.App {
+  text-align: center;
+}
+.App-header {
+  background-color: #000000;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+
+}
+
+.background {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  overflow: hidden;
+}
+.galalxy_bg {
+  width: 281px;
+  height: 238px;
+  background-image: url(./assets/galalxy-bg.svg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  animation: galalxy_bg_move  2s linear  forwards;
+}
+
+@keyframes galalxy_bg_move {
+  0%{
+   background: #ffffff;
+  }
+  5% {
+    opacity: 0.3;
+    background: transparent;
+  }
+  10% {
+   opacity: 0.5;
+   background-size: 280%;
+  }
+  100% {
+   opacity: 1;
+   background-size: 220%;
+  
+  }
+}
+
+.shoe_position {
+  width: 175%;
+  height: 120%;
+  margin: 0 auto;
+  position: absolute;
+  top: -14%;
+  left: -28%;
+  background: url(./assets/shoe-kv-gray_big.svg) center center no-repeat;
+  background-size: cover;
+  background-size: 5%;
+  animation: scale 2s linear  forwards;
+}
+
+
+@keyframes scale {
+  0% {
+    background-size: 10%;
+    left: -28%;
+  }
+  100% {
+   background-size: 112%;
+   left: -112%;
+   top: 4%;
+  }
+}
+
+
+.ultraboost {
+  width: 9vw;
+  height: 15vh;
+  position: absolute;
+  top: 182px;
+  left: 33px;
+  background: url(./assets/ultraboost_20_copy.svg) center center no-repeat;
+  background-size: cover;
+  animation: scale-ultraboost 1s linear 1s forwards;
+  background-size: 2%;
+}
+
+@keyframes scale-ultraboost {
+  0% {
+    background-size: 0%;
+  }
+
+  50% {
+    background-size: 15%;
+  }
+
+  100% {
+    background-size: 70%;
+  }
+}
+
+.discovery_wing {
+  width: 47%;
+  height: 100%;
+  position: relative;
+  top: -242px;;
+  left: 150px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(./assets/discovery_Wing.svg);
+  animation: move 1.5s ease-in-out 0.7s normal forwards;
+}
+
+
+ @keyframes move {
+   0% {
+     top: -222px;
+   }
+
+   25% {
+     top: 0px;
+
+     width: 47%;
+     height: 100%;
+
+   }
+
+   30% {
+     top: -60px;
+     width: 47%;
+     height: 85%;
+   }
+
+   35% {
+     top: 0px;
+     width: 47%;
+     height: 100%;
+   }
+
+   50% {
+     top: 0px;
+     width: 47%;
+     height: 90%;
+   }
+
+   100% {
+     top: 0px;
+   }
+ }
+
+ .tfp {
+  width: 6%;
+  height: 50%;
+  position: relative;
+  top: 88px; 
+  left: 142px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(./assets/tfp.svg);
+  animation: move-tfp 1.5s ease-in-out 0.7s normal forwards;
+ }
+
+@keyframes move-tfp {
+  0% {
+    top: 88px;
+
+  }
+
+  100% {
+    top: -88px;
+  }
+}
+
+
+.cta-medium{
+  width: 86%;
+  height: 13%;
+  position: absolute;
+  top: -28px;
+  left: 13px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(./assets/cta_medium.svg);
+  animation: move-cta-medium 1.5s linear 0.5s normal forwards;
+}
+
+@keyframes move-cta-medium {
+  0% {
+    top: 40px;
+  }
+
+  25% {
+    top: 190px;
+    bottom: 0;
+    width: 85%;
+    height: 13%;
+
+  }
+
+  30% {
+    top: 140px;
+    width: 86%;
+    height: 13%;
+  }
+
+
+  35% {
+    top: 160px;
+    width: 86%;
+    height: 13%;
+  }
+
+  50% {
+    top: 170px;
+    width: 86%;
+    height: 13%;
+  }
+
+  100% {
+    top: 190px;
+  }
+}
+
+.logo_black {
+  width: 10%;
+  height: 8%;
+  position: absolute;
+  top: 158px;
+  left: 222px;
+  z-index: 1;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(./assets/logo_black.svg);
+  animation: opacity 1.5s linear 0.5s normal forwards;
+}
+
+@keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+
+  30% {
+    opacity: 0.3;
+  }
+
+  50% {
+    opacity: 0.5;
+  }
+
+  70% {
+    opacity: 0.7;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.goodbye {
+  width: 12%;
+  height: 57%;
+  position: absolute;
+  left: 182px;
+  z-index: 1;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(./assets/goodbye.svg);
+  animation: goodbye-move 1.5s linear 0.5s normal forwards;
+}
+
+
+.gravity {
+  width: 12%;
+  height: 57%;
+  position: absolute;
+  left: 220px;
+  z-index: 1;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(./assets/gravity.svg);
+  animation: gravity-move 1s linear 1.7s normal forwards;
+}
+
+
+@keyframes goodbye-move {
+  0% {
+    top: -152px;
+  }
+
+  100% {
+    top: 41px;
+  }
+}
+
+@keyframes gravity-move {
+  0% {
+    top: -152px;
+  }
+
+  100% {
+    top: 29px;
+  }
+}
